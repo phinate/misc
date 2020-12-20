@@ -15,10 +15,10 @@ repos:
     rev: 3.8.4
     hooks:
     -   id: flake8
--   repo: https://github.com/pre-commit/mirrors-autopep8
-    rev: v1.5.4
+-   repo: https://github.com/psf/black
+    rev: 20.8b1
     hooks:
-    -   id: autopep8
+    - id: black
 -   repo: https://github.com/asottile/reorder_python_imports
     rev: v2.3.6
     hooks:
@@ -40,9 +40,6 @@ repos:
     - id: nbqa-mypy
       additional_dependencies: [mypy==0.790]
     - id: nbqa-flake8
-      additional_dependencies: [flake8==3.8.4] 
-    - id: nbqa
-      args: [autopep8]
-      name: nbqa-autopep8
-      alias: nbqa-autopep8
-      additional_dependencies: [autopep8==1.5.4]
+      additional_dependencies: [flake8==3.8.4]
+    - id: nbqa-black
+      additional_dependencies: [black==20.8b1]
