@@ -45,4 +45,4 @@ repos:
       args: [autopep8]
       name: nbqa-autopep8
       alias: nbqa-autopep8
-      additional_dependencies: [autopep8==2.3.6]
+      additional_dependencies: [autopep8==1.5.4]
